@@ -20,7 +20,45 @@ public class Secciones {
       String nombreArchivo = "actualidad.html";
       String rutaArchivo = "D:\\Users\\santi\\Downloads\\FacadePatrones";
       FileWriter archivo = new FileWriter(rutaArchivo + nombreArchivo);
-      archivo.write("<html><head><title>Seccion Actualidad</title></head><body><h1>Actualidad</h1></body></html>");
+      archivo.write("<!DOCTYPE html>\r\n"
+      		+ "<html>\r\n"
+      		+ "<head>\r\n"
+      		+ "	<title>Sección de Actualidad - Mi Periódico</title>\r\n"
+      		+ "</head>\r\n"
+      		+ "<body>\r\n"
+      		+ "	<header>\r\n"
+      		+ "		<h1>Actualidad</h1>\r\n"
+      		+ "		<nav>\r\n"
+      		+ "			<ul>\r\n"
+      		+ "				<img src=\"C:\\Users\\LENOVO\\Documents\\Patronesdediseño\\facades\\FacadePatrones\\actualidad.jpg\" alt=\"actualidad\">\r\n"
+      		+ "				<li><a href=\"#\">Noticias destacadas</a></li>\r\n"
+      		+ "				<li><a href=\"#\">Política</a></li>\r\n"
+      		+ "				<li><a href=\"#\">Economía</a></li>\r\n"
+      		+ "				<li><a href=\"#\">Internacional</a></li>\r\n"
+      		+ "				<li><a href=\"#\">Ciencia y Tecnología</a></li>\r\n"
+      		+ "			</ul>\r\n"
+      		+ "		</nav>\r\n"
+      		+ "	</header>\r\n"
+      		+ "	<main>\r\n"
+      		+ "		<section>\r\n"
+      		+ "			<article>\r\n"
+      		+ "				<h2>Titular de la noticia</h2>\r\n"
+      		+ "				<p>Este es un resumen breve de la noticia...</p>\r\n"
+      		+ "				<a href=\"#\">Leer más</a>\r\n"
+      		+ "			</article>\r\n"
+      		+ "			<article>\r\n"
+      		+ "				<h2>Titular de otra noticia</h2>\r\n"
+      		+ "				<p>Este es un resumen breve de otra noticia...</p>\r\n"
+      		+ "				<a href=\"#\">Leer más</a>\r\n"
+      		+ "			</article>\r\n"
+      		+ "			<!-- Agregar más artículos aquí -->\r\n"
+      		+ "		</section>\r\n"
+      		+ "	</main>\r\n"
+      		+ "	<footer>\r\n"
+      		+ "		<p>Derechos reservados Mi Periódico - 2023</p>\r\n"
+      		+ "	</footer>\r\n"
+      		+ "</body>\r\n"
+      		+ "</html>");
       archivo.close();
       
       try {
