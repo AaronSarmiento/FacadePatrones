@@ -76,7 +76,16 @@ public class Secciones {
         String nombreArchivo = "tecnologia.html";
       String rutaArchivo = "D:\\Users\\santi\\Downloads\\FacadePatrones";
       FileWriter archivo = new FileWriter(rutaArchivo + nombreArchivo);
-      archivo.write("<html><head><title>Seccion Tecnologia</title></head><body><h1>Tecnologia</h1></body></html>");
+      archivo.write("<section>\n" +
+"  <h2>Tecnología</h2>\n" +
+"  <article>\n" +
+"    <h3>ChatGPT: la nueva tecnología de lenguaje natural</h3>\n" +
+"    <img src=\"C:\\Users\\santi\\OneDrive - Universidad Sergio Arboleda\\Documentos\\Materias 6 semestre\\Patrones de diseño de software\\FacadePatrones\\FacadePatrones\\chatgpt.png\" alt=\"ChatGPT\">\n" +
+"    <p>ChatGPT es una nueva tecnología de lenguaje natural desarrollada por OpenAI. Utiliza un modelo de inteligencia artificial llamado GPT (Generative Pre-trained Transformer) para generar respuestas coherentes y relevantes en conversaciones con humanos.</p>\n" +
+"    <p>Con ChatGPT, las empresas pueden automatizar su servicio al cliente y mejorar la experiencia del usuario al proporcionar respuestas rápidas y precisas a las preguntas comunes. Además, ChatGPT se puede utilizar en una variedad de aplicaciones, como chatbots de ventas, asistentes virtuales y más.</p>\n" +
+"    <p>En resumen, ChatGPT es una tecnología emocionante que está transformando la forma en que interactuamos con las máquinas y que tiene el potencial de mejorar significativamente la eficiencia y la satisfacción del usuario.</p>\n" +
+"  </article>\n" +
+"</section>");
       archivo.close();
       
       try {
