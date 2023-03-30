@@ -69,14 +69,14 @@ public class Secciones {
 }
     }
     public void deportes()throws IOException{
-        String nombreArchivo = "deportes.html";
-      String rutaArchivo = "D:\\Users\\santi\\Downloads\\FacadePatrones";
+        String nombreArchivo = "";
+      String rutaArchivo = "";
       FileWriter archivo = new FileWriter(rutaArchivo + nombreArchivo);
       archivo.write("<html><head><title>Seccion Deportes</title></head><body><h1>Deportes</h1></body></html>");
       archivo.close();
       
       try {
-    String url = "file:///D:/Users/santi/Downloads/FacadePatronesdeportes.html"; // Reemplaza "ruta/al/archivo.html" con la ruta y nombre del archivo HTML que quieres abrir
+    String url = ""; // Reemplaza "ruta/al/archivo.html" con la ruta y nombre del archivo HTML que quieres abrir
     java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
 } catch (java.io.IOException e) {
     System.out.println(e.getMessage());
@@ -111,14 +111,14 @@ public class Secciones {
 }
     }
     public void tecnologia() throws IOException{
-        String nombreArchivo = "tecnologia.html";
-      String rutaArchivo = "D:\\Users\\santi\\Downloads\\FacadePatrones";
+        String nombreArchivo = "";// aqui va nombre de la seccion
+      String rutaArchivo = "";// aqui la ruta del archivo
       FileWriter archivo = new FileWriter(rutaArchivo + nombreArchivo);
       archivo.write("<html><head><title>Seccion Tecnologia</title></head><body><h1>Tecnologia</h1></body></html>");
       archivo.close();
       
       try {
-    String url = "file:///D:/Users/santi/Downloads/FacadePatronestecnologia.html"; // Reemplaza "ruta/al/archivo.html" con la ruta y nombre del archivo HTML que quieres abrir
+    String url = ""; // Reemplaza "ruta/al/archivo.html" con la ruta y nombre del archivo HTML que quieres abrir
     java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
 } catch (java.io.IOException e) {
     System.out.println(e.getMessage());
